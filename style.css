@@ -5,6 +5,16 @@ body {
     background: linear-gradient(to bottom, #1d1e22, #393f4d);
     color: #d4d4dc;
 }
+h1, h3{
+    font-weight: bold;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+h3:hover,h1:hover{
+    color: #8b9467;
+    transform: scale(1.3);
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -112,4 +122,53 @@ ul li a {
 .portfolio-item img {
     width: 100%;
     border-radius: 10px;
+}
+.about, .contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: #28292e;
+    color: #feda6a;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 25px;
+    opacity: 50%;
+    grid-column-start: 1;
+  
+    
+    
+}
+a{
+    transition: all 0.6s ease;
+}
+a:hover {
+    transform: scale(1.3);
+    text-shadow: 0 0 15px gold, 0 0 30px gold; /* Brighter glow */
+    filter: drop-shadow(0 0 10px gold); 
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contact input, .contact textarea, .contact button {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact input, .contact textarea {
+    background: #393f4d;
+    color: white;
+}
+.contact button {
+    background: #feda6a;
+    color: #1d1e22;
+    font-weight: bold;
+    cursor: pointer;
 }
