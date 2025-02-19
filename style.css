@@ -1,0 +1,115 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1d1e22, #393f4d);
+    color: #d4d4dc;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #393f4d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #feda6a;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    display: inline;
+}
+ul li a {
+    text-decoration: none;
+    color: #feda6a;
+    font-weight: bold;
+}
+.contact-btn {
+    background: #feda6a;
+    color: #1d1e22;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.contact-btn:hover{
+    background-color: #feda6a;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 150px 20px 100px;
+}
+#DP {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #feda6a;
+    animation: float 3s ease-in-out infinite;
+    margin-top: 100px;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+.text-content {
+    max-width: 600px;
+}
+.cta-btn {
+    background: #feda6a;
+    color: #1d1e22;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.cta-btn:hover {
+    background: #d4b04c;
+}
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background: #28292e;
+    color: #feda6a;
+}
+.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: #1d1e22;
+    padding: 40px 20px;
+    text-align: center;
+}
+.portfolio-item {
+    max-width: 300px;
+    background: #393f4d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
